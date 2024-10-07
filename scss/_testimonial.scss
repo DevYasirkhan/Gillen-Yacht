@@ -1,0 +1,151 @@
+.testimonial {
+}
+
+.testimonial .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 138px 97px 115px 97px;
+  background-color: $--color-primary-4;
+
+  @media only screen and (max-width: $bp-full) {
+    padding: 100px 85px 100px 85px;
+  }
+
+  @media only screen and (max-width: $bp-huge) {
+    padding: 80px 50px 80px 50px;
+  }
+
+  .button-left,
+  .button-right {
+    width: 42px;
+    height: 42px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: $--color-primary-4;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-full) {
+      height: 35px;
+      width: 35px;
+    }
+
+    &__icon,
+    &__icon {
+      width: 22px;
+      height: 22px;
+      fill: #fff;
+
+      @media only screen and (max-width: $bp-full) {
+        height: 18px;
+        width: 18px;
+      }
+    }
+  }
+
+  .slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 80%;
+  }
+
+  .slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    // width: 1381px;
+    // width: 100%;
+
+    &__1 {
+      h3 {
+        width: 65%;
+
+        @media only screen and (max-width: $bp-huge) {
+          width: 80%;
+        }
+      }
+    }
+
+    &__2 {
+      h3 {
+        width: 98%;
+
+        @media only screen and (max-width: $bp-full) {
+          width: 96%;
+        }
+      }
+    }
+
+    &__block {
+      width: 82px;
+      height: 87px;
+      margin-bottom: 41px;
+
+      @media only screen and (max-width: $bp-full) {
+        height: 70px;
+        width: 70px;
+        margin-bottom: 32px;
+      }
+    }
+
+    &__img {
+      width: 100%;
+    }
+
+    &__stars {
+      display: flex;
+      align-items: center;
+      gap: 17px;
+      margin-bottom: 20px;
+    }
+
+    &__star {
+      height: 28px;
+      width: 28px;
+      fill: $--color-secondary;
+
+      @media only screen and (max-width: $bp-full) {
+        height: 22px;
+        width: 22px;
+      }
+    }
+
+    &__author-text {
+      font-size: 38px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 40px;
+
+      @media only screen and (max-width: $bp-full) {
+        font-size: 32px;
+      }
+
+      @media only screen and (max-width: $bp-huge) {
+        font-size: 26px;
+      }
+    }
+
+    &__author-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: #929292;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+
+      @media only screen and (max-width: $bp-full) {
+        letter-spacing: 4px;
+      }
+
+      @media only screen and (max-width: $bp-huge) {
+        font-size: 12px;
+      }
+    }
+  }
+}

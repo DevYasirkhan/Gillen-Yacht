@@ -1,0 +1,141 @@
+.project {
+  // position: relative;
+
+  // &::after {
+  //   content: "";
+  //   background-image: url(../img/p-back-img.png);
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   width: 50%;
+  //   height: 100%;
+  //   background-size: cover;
+  //   background-position: center;
+  // }
+}
+
+.project .container {
+  display: flex;
+  align-items: center;
+  overflow-y: hidden;
+  position: relative;
+
+  // &::before {
+  //   content: "";
+  //   width: 50%;
+  //   height: 100%;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   // background-color: $--color-back;
+  //   background-color: #efefef;
+  // }
+
+  .project-content {
+    // background-color: $--color-back;
+    background-color: #ececec;
+    padding: 94px 43px 128px 168px;
+    // padding: 0px 43px 0px 168px;
+    z-index: 1;
+    margin: 0 auto;
+    width: 50%;
+    position: relative;
+
+    @media only screen and (max-width: $bp-full) {
+      // padding: 0px 35px 0px 130px;
+    }
+
+    @media only screen and (max-width: 83.125em) {
+      // padding: 0px 35px 0px 80px;
+    }
+
+    @media only screen and (max-width: $bp-huge) {
+      // padding: 0px 35px 0px 60px;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      // padding: 0px 30px 0px 30px;
+    }
+
+    &::after {
+      content: "";
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 36%;
+      right: -10%;
+      background-color: $--color-back;
+      border: none;
+      clip-path: polygon(50% 21%, 0% 100%, 100% 100%);
+      transform: rotate(90deg);
+      z-index: 5;
+    }
+
+    &__title {
+      font-size: 38px;
+      font-weight: 700;
+      color: $--color-primary-6;
+      margin-bottom: 41px;
+
+      @media only screen and (max-width: $bp-full) {
+        font-size: 34px;
+        margin-bottom: 35px;
+      }
+
+      @media only screen and (max-width: $bp-huge) {
+        font-size: 30px;
+        margin-bottom: 28px;
+      }
+    }
+
+    &__description {
+      font-size: 18px;
+      font-weight: 300;
+      margin-bottom: 50px;
+      width: 85%;
+      z-index: 8;
+      position: relative;
+
+      @media only screen and (max-width: $bp-full) {
+        width: 90%;
+        margin-bottom: 45px;
+      }
+
+      @media only screen and (max-width: 83.125em) {
+        width: 100%;
+        margin-bottom: 35px;
+      }
+
+      @media only screen and (max-width: $bp-huge) {
+        font-size: 16px;
+      }
+    }
+
+    &__info {
+      font-size: 14px;
+      font-weight: 300;
+      color: $--color-red-1;
+      text-transform: uppercase;
+      letter-spacing: 6px;
+
+      @media only screen and (max-width: $bp-full) {
+        letter-spacing: 4px;
+      }
+
+      @media only screen and (max-width: $bp-huge) {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .project-img {
+    // width: 50%;
+    flex: 1;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+/////  COLORS //////
+
+$--color-primary: #0059b1;
+$--color-primary-2: #0056b4;
+$--color-primary-3: #102d57;
+$--color-primary-4: #122e56;
+$--color-primary-5: #0053b7;
+$--color-primary-6: #274167;
+
+$--color-grey: #505965;
+
+$--color-red-1: #929292;
+$--color-red-2: #636060;
+
+$--color-secondary: #bce0fd;
+
+$--color-back: #f1f9ff;
+
+$--color-border: #707070;
+$--color-border-2: #d3d3d3;
+
+/////  MEDIA QUERRY  /////
+
+$bp-full: 105em; // 1680px / 16px = 105em;
+$bp-huge: 75em; // 1200px / 16px = 75em;
+$bp-large: 64em; // 1024px / 16px = 64em;
+$bp-big: 62em; // 992px / 16px = 62em;
+$bp-medium: 48em; // 768px / 16px = 48em;
+$bp-small: 30em; // 480px / 16px = 30em;
+$bp-mini: 20em; // 320px / 16px = 20em;
+
+///// BASIC  /////
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  // font-size: 62.5%; // 10px / 16px = 62.5%   1rem = 10px;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  background-color: #f7fafd;
+  color: $--color-grey;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(/font/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(/font-2/Roboto-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(/font-2/Roboto-Light.ttf);
+  font-weight: 300;
+}
+
+// .container {
+//   margin: 0 auto;
+// }

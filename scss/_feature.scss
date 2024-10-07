@@ -1,0 +1,107 @@
+.feature {
+}
+
+.feature .container {
+  padding: 90px 48px 105px 56px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media only screen and (max-width: $bp-huge) {
+    padding: 80px 40px 80px 40px;
+  }
+
+  .section-heading {
+    font-size: 32px;
+    font-weight: 700;
+    color: $--color-primary-4;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 25px;
+
+    @media only screen and (max-width: $bp-full) {
+      font-size: 28px;
+      letter-spacing: 3px;
+    }
+
+    @media only screen and (max-width: $bp-huge) {
+      font-size: 25px;
+    }
+  }
+
+  .feature-subtitle {
+    font-size: 18px;
+    color: $--color-primary-4;
+    letter-spacing: 8px;
+    width: 90%;
+    // width: 1078px;
+    margin-bottom: 42px;
+
+    @media only screen and (max-width: $bp-full) {
+      font-size: 16px;
+      letter-spacing: 6px;
+    }
+  }
+
+  .feature-description {
+    font-size: 18px;
+    font-weight: 300;
+    width: 75%;
+    // width: 1000px;
+    margin-bottom: 100px;
+
+    @media only screen and (max-width: $bp-full) {
+      font-size: 17px;
+    }
+
+    @media only screen and (max-width: $bp-huge) {
+      margin-bottom: 70px;
+    }
+
+    :nth-child(1) {
+      display: inline-block;
+      margin-bottom: 30px;
+    }
+
+    :nth-child(2) {
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+  }
+
+  .feature-logo-title {
+    font-size: 18px;
+    color: $--color-primary-4;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    margin-bottom: 67px;
+
+    @media only screen and (max-width: $bp-full) {
+      font-size: 17px;
+      letter-spacing: 6px;
+    }
+
+    @media only screen and (max-width: $bp-huge) {
+      margin-bottom: 55px;
+    }
+  }
+
+  .feature-logo-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // height: 127px;
+    width: 100%;
+    margin-bottom: 88px;
+
+    @media only screen and (max-width: $bp-huge) {
+      margin-bottom: 70px;
+    }
+  }
+
+  .feature-logo-img {
+    width: 70%;
+    height: 70%;
+  }
+}

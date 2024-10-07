@@ -1,0 +1,144 @@
+// .banner {
+// }
+
+.banner .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 64px 30px 76px 30px;
+
+  background-image: url(../img/banner-img.png);
+  // background-size: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+
+  .banner-subtitle {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+
+    @media only screen and (max-width: $bp-full) {
+      font-size: 18px;
+      letter-spacing: 2px;
+    }
+
+    @media only screen and (max-width: $bp-huge) {
+      font-size: 16px;
+    }
+  }
+
+  .banner-heading {
+    font-size: 68px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 60px;
+    width: 80%;
+
+    @media only screen and (max-width: $bp-full) {
+      font-size: 50px;
+      width: 70%;
+    }
+
+    @media only screen and (max-width: 83.125em) {
+      width: 80%;
+    }
+
+    @media only screen and (max-width: $bp-huge) {
+      font-size: 40px;
+      margin-bottom: 50px;
+    }
+
+    :nth-child(1) {
+      display: inline-block;
+      width: 80%;
+    }
+
+    :nth-child(2) {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+
+  .banner-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+
+    @media only screen and (max-width: $bp-huge) {
+      margin-bottom: 40px;
+    }
+
+    &__doc {
+      height: 30px;
+      width: 28px;
+      fill: #ffffff6f;
+
+      @media only screen and (max-width: $bp-huge) {
+        height: 26px;
+        width: 24px;
+      }
+    }
+
+    &__down {
+      height: 25px;
+      width: 28px;
+      fill: #ffffff6f;
+
+      @media only screen and (max-width: $bp-huge) {
+        height: 22px;
+        width: 24px;
+      }
+    }
+  }
+
+  .banner-progress {
+    display: flex;
+    align-items: center;
+
+    &__date {
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      margin-right: 22px;
+      margin-left: 50px;
+
+      @media only screen and (max-width: $bp-huge) {
+        font-size: 18px;
+      }
+    }
+
+    &__line {
+      width: 140px;
+      height: 6px;
+      border-radius: 100px;
+      border: 1px solid #f7fafd;
+      position: relative;
+
+      @media only screen and (max-width: $bp-full) {
+        width: 110px;
+      }
+
+      &::before {
+        content: "";
+        background-color: #f7fafd;
+        height: 100%;
+        width: 70%;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        @media only screen and (max-width: $bp-full) {
+          width: 60%;
+        }
+      }
+    }
+  }
+}

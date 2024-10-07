@@ -1,0 +1,166 @@
+footer {
+  padding-bottom: 98px;
+
+  @media only screen and (max-width: $bp-full) {
+    padding-bottom: 70px;
+  }
+
+  @media only screen and (max-width: $bp-huge) {
+    padding-bottom: 40px;
+  }
+}
+
+footer .container {
+  padding: 99px 98px 57px 114px;
+  background-color: $--color-back;
+
+  @media only screen and (max-width: $bp-full) {
+    padding: 90px 90px 45px 100px;
+  }
+
+  @media only screen and (max-width: $bp-huge) {
+    padding: 70px 70px 45px 70px;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 70px 40px 45px 50px;
+  }
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid $--color-border-2;
+
+  .footer-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+
+    @media only screen and (max-width: $bp-full) {
+      width: 30%;
+    }
+
+    @media only screen and (max-width: $bp-huge) {
+      width: 35%;
+    }
+
+    @media only screen and (max-width: $bp-big) {
+      width: 40%;
+    }
+
+    .footer-list {
+      list-style: none;
+
+      &__item {
+        &:not(:last-child) {
+          padding-bottom: 36px;
+
+          @media only screen and (max-width: $bp-full) {
+            padding-bottom: 32px;
+          }
+        }
+
+        &-link:link,
+        &-link:visited {
+          display: inline-block;
+          font-size: 18px;
+          font-weight: 300;
+          text-decoration: none;
+          color: inherit;
+
+          @media only screen and (max-width: $bp-full) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-right {
+    width: 37%;
+
+    @media only screen and (max-width: $bp-full) {
+      width: 44%;
+    }
+
+    @media only screen and (max-width: $bp-huge) {
+      width: 48%;
+    }
+
+    .sign-heading {
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      margin-bottom: 32px;
+
+      @media only screen and (max-width: $bp-full) {
+        font-size: 18px;
+        letter-spacing: 3px;
+      }
+
+      @media only screen and (max-width: $bp-huge) {
+        font-size: 16px;
+      }
+    }
+
+    .sign-input {
+      padding: 22px 0 22px 18px;
+      color: inherit;
+      font-size: 18px;
+      font-weight: 300;
+      width: 90%;
+      border: none;
+      border-radius: 10px;
+      margin-bottom: 32px;
+      outline: none;
+
+      @media only screen and (max-width: $bp-full) {
+        font-size: 16px;
+        padding: 20px 0 20px 16px;
+      }
+
+      @media only screen and (max-width: $bp-huge) {
+        padding: 16px 0 16px 14px;
+      }
+    }
+
+    .sign-label {
+    }
+
+    .sign-button {
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 12px 126px;
+      background-color: $--color-primary;
+      border: none;
+      border-radius: 100px;
+
+      @media only screen and (max-width: $bp-full) {
+        font-size: 16px;
+        padding: 12px 90px;
+      }
+
+      @media only screen and (max-width: $bp-huge) {
+        font-size: 14px;
+        padding: 10px 70px;
+      }
+    }
+  }
+}
+
+.copyright {
+  font-size: 18px;
+  font-weight: 300;
+  color: $--color-primary-4;
+  padding: 16px 0 19px 114px;
+  background-color: $--color-back;
+
+  @media only screen and (max-width: $bp-full) {
+    font-size: 16px;
+  }
+}
