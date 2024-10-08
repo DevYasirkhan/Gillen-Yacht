@@ -90,6 +90,11 @@
 
     @media only screen and (max-width: $bp-medium) {
       margin-bottom: 50px;
+      gap: 10px;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      gap: 5px;
     }
 
     .gallery-item {
@@ -170,6 +175,22 @@
         opacity: 0;
         transition: all 0.3s;
         border-radius: 3px;
+
+        @media only screen and (max-width: $bp-huge) {
+          font-size: 22px;
+        }
+
+        @media only screen and (max-width: $bp-big) {
+          font-size: 18px;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+          font-size: 14px;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+          font-size: 12px;
+        }
       }
 
       &__arrow {
@@ -179,10 +200,26 @@
         width: 39px;
         height: 39px;
         fill: #fff;
-
         cursor: pointer;
         opacity: 0;
         transition: opacity 0.3s;
+
+        @media only screen and (max-width: $bp-huge) {
+          width: 32px;
+          height: 32px;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+          width: 26px;
+          height: 26px;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+          width: 20px;
+          height: 20px;
+          top: 5px;
+          right: 5px;
+        }
       }
 
       &:hover {

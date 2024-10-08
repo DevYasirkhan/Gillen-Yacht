@@ -47,3 +47,18 @@
 //     modal.classList.remove("active"); // Hide the modal
 //   });
 // });
+
+// const menutoggle = document.getElementById("header-menu");
+
+// const headermenubox = document.getElementById("header-menu-box");
+// const navLinks = headermenubox.querySelectorAll("a");
+
+// headermenu.addEventListener("click", () => {
+//   headermenubox.toggleAttribute("active");
+// });
+
+// navLinks.forEach((link) => {
+//   link.addEventListener("click", () => {
+//     headermenubox.classList.remove("active");
+//   });
+// });

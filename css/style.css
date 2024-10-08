@@ -365,6 +365,11 @@ header .container .header-right__icon {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
+@media only screen and (max-width: 48em) {
+  .header-menu-box {
+    width: 100%;
+  }
+}
 .header-menu-box__text {
   font-size: 14px;
   font-weight: 700;
@@ -421,6 +426,12 @@ header .container .header-right__icon {
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
   opacity: 0;
+}
+@media only screen and (max-width: 48em) {
+  .header-menu-box__item::after {
+    width: 100%;
+    border-radius: 0;
+  }
 }
 .header-menu-box__item:hover::after {
   opacity: 1;
@@ -1520,6 +1531,12 @@ header .container .header-right__icon {
 @media only screen and (max-width: 48em) {
   .gallery .container .gallery-grid {
     margin-bottom: 50px;
+    gap: 10px;
+  }
+}
+@media only screen and (max-width: 30em) {
+  .gallery .container .gallery-grid {
+    gap: 5px;
   }
 }
 .gallery .container .gallery-grid .gallery-item {
@@ -1636,6 +1653,26 @@ header .container .header-right__icon {
   transition: all 0.3s;
   border-radius: 3px;
 }
+@media only screen and (max-width: 75em) {
+  .gallery .container .gallery-grid .gallery-item__text {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 62em) {
+  .gallery .container .gallery-grid .gallery-item__text {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 48em) {
+  .gallery .container .gallery-grid .gallery-item__text {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 30em) {
+  .gallery .container .gallery-grid .gallery-item__text {
+    font-size: 12px;
+  }
+}
 .gallery .container .gallery-grid .gallery-item__arrow {
   position: absolute;
   top: 10px;
@@ -1647,6 +1684,26 @@ header .container .header-right__icon {
   opacity: 0;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
+}
+@media only screen and (max-width: 75em) {
+  .gallery .container .gallery-grid .gallery-item__arrow {
+    width: 32px;
+    height: 32px;
+  }
+}
+@media only screen and (max-width: 48em) {
+  .gallery .container .gallery-grid .gallery-item__arrow {
+    width: 26px;
+    height: 26px;
+  }
+}
+@media only screen and (max-width: 30em) {
+  .gallery .container .gallery-grid .gallery-item__arrow {
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    right: 5px;
+  }
 }
 .gallery .container .gallery-grid .gallery-item:hover {
   border-radius: 3px;
