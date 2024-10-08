@@ -16,6 +16,10 @@
     padding: 80px 50px 80px 50px;
   }
 
+  @media only screen and (max-width: $bp-medium) {
+    padding: 70px 30px 70px 30px;
+  }
+
   .button-left,
   .button-right {
     width: 42px;
@@ -93,6 +97,10 @@
         width: 70px;
         margin-bottom: 32px;
       }
+
+      @media only screen and (max-width: $bp-medium) {
+        margin-bottom: 25px;
+      }
     }
 
     &__img {
@@ -115,6 +123,11 @@
         height: 22px;
         width: 22px;
       }
+
+      @media only screen and (max-width: $bp-medium) {
+        height: 20px;
+        width: 20px;
+      }
     }
 
     &__author-text {
@@ -129,6 +142,11 @@
 
       @media only screen and (max-width: $bp-huge) {
         font-size: 26px;
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 20px;
+        margin-bottom: 30px;
       }
     }
 
@@ -145,6 +163,10 @@
 
       @media only screen and (max-width: $bp-huge) {
         font-size: 12px;
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        letter-spacing: 3px;
       }
     }
   }

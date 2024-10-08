@@ -1,39 +1,14 @@
 .project {
-  // position: relative;
-
-  // &::after {
-  //   content: "";
-  //   background-image: url(../img/p-back-img.png);
-  //   position: absolute;
-  //   top: 0;
-  //   right: 0;
-  //   width: 50%;
-  //   height: 100%;
-  //   background-size: cover;
-  //   background-position: center;
-  // }
 }
 
 .project .container {
   display: flex;
-  align-items: center;
   overflow-y: hidden;
   position: relative;
-
-  // &::before {
-  //   content: "";
-  //   width: 50%;
-  //   height: 100%;
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   // background-color: $--color-back;
-  //   background-color: #efefef;
-  // }
+  flex-wrap: wrap;
 
   .project-content {
-    // background-color: $--color-back;
-    background-color: #ececec;
+    background-color: $--color-back;
     padding: 94px 43px 128px 168px;
     // padding: 0px 43px 0px 168px;
     z-index: 1;
@@ -42,19 +17,20 @@
     position: relative;
 
     @media only screen and (max-width: $bp-full) {
-      // padding: 0px 35px 0px 130px;
-    }
-
-    @media only screen and (max-width: 83.125em) {
-      // padding: 0px 35px 0px 80px;
+      padding: 80px 35px 100px 120px;
     }
 
     @media only screen and (max-width: $bp-huge) {
-      // padding: 0px 35px 0px 60px;
+      padding: 60px 35px 70px 100px;
     }
 
-    @media only screen and (max-width: $bp-large) {
-      // padding: 0px 30px 0px 30px;
+    @media only screen and (max-width: $bp-big) {
+      padding: 60px 35px 60px 60px;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+      padding: 60px 25px;
     }
 
     &::after {
@@ -96,18 +72,16 @@
       z-index: 8;
       position: relative;
 
-      @media only screen and (max-width: $bp-full) {
-        width: 90%;
-        margin-bottom: 45px;
-      }
-
-      @media only screen and (max-width: 83.125em) {
-        width: 100%;
-        margin-bottom: 35px;
-      }
-
       @media only screen and (max-width: $bp-huge) {
-        font-size: 16px;
+        width: 90%;
+      }
+
+      @media only screen and (max-width: $bp-big) {
+        margin-bottom: 30px;
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        width: 100%;
       }
     }
 
@@ -119,18 +93,17 @@
       letter-spacing: 6px;
 
       @media only screen and (max-width: $bp-full) {
-        letter-spacing: 4px;
-      }
-
-      @media only screen and (max-width: $bp-huge) {
-        font-size: 12px;
+        letter-spacing: 3px;
       }
     }
   }
 
   .project-img {
-    // width: 50%;
-    flex: 1;
+    width: 50%;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+    }
 
     img {
       width: 100%;

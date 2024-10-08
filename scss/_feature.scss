@@ -12,6 +12,10 @@
     padding: 80px 40px 80px 40px;
   }
 
+  @media only screen and (max-width: $bp-big) {
+    padding: 60px 25px 60px 25px;
+  }
+
   .section-heading {
     font-size: 32px;
     font-weight: 700;
@@ -42,6 +46,15 @@
       font-size: 16px;
       letter-spacing: 6px;
     }
+
+    @media only screen and (max-width: $bp-huge) {
+      font-size: 14px;
+      letter-spacing: 4px;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
+    }
   }
 
   .feature-description {
@@ -51,17 +64,26 @@
     // width: 1000px;
     margin-bottom: 100px;
 
-    @media only screen and (max-width: $bp-full) {
-      font-size: 17px;
+    @media only screen and (max-width: $bp-huge) {
+      font-size: 16px;
+      margin-bottom: 60px;
     }
 
-    @media only screen and (max-width: $bp-huge) {
-      margin-bottom: 70px;
+    @media only screen and (max-width: $bp-medium) {
+      width: 80%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
     }
 
     :nth-child(1) {
       display: inline-block;
       margin-bottom: 30px;
+
+      @media only screen and (max-width: $bp-small) {
+        margin-bottom: 12px;
+      }
     }
 
     :nth-child(2) {
@@ -89,19 +111,42 @@
 
   .feature-logo-flex {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
-    // height: 127px;
+    justify-content: space-between;
+    margin-bottom: 80px;
     width: 100%;
-    margin-bottom: 88px;
+    gap: 15px;
 
     @media only screen and (max-width: $bp-huge) {
-      margin-bottom: 70px;
+      margin-bottom: 60px;
     }
-  }
 
-  .feature-logo-img {
-    width: 70%;
-    height: 70%;
+    @media only screen and (max-width: $bp-medium) {
+      flex-wrap: wrap;
+    }
+
+    div {
+      flex: 1 1 calc(16.66% - 15px);
+
+      @media only screen and (max-width: $bp-medium) {
+        flex: 1 1 calc(33.33% - 15px);
+      }
+    }
+
+    .feature-logo-img {
+      max-width: 100%;
+      height: auto;
+
+      @media only screen and (max-width: $bp-medium) {
+        max-width: 80%;
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        // width: 70%;
+        // height: 70%;
+        // object-fit: contain;
+      }
+    }
   }
 }

@@ -13,6 +13,7 @@ footer {
 footer .container {
   padding: 99px 98px 57px 114px;
   background-color: $--color-back;
+  flex-wrap: wrap;
 
   @media only screen and (max-width: $bp-full) {
     padding: 90px 90px 45px 100px;
@@ -24,6 +25,10 @@ footer .container {
 
   @media only screen and (max-width: $bp-large) {
     padding: 70px 40px 45px 50px;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 60px 25px 40px 25px;
   }
 
   display: flex;
@@ -47,6 +52,14 @@ footer .container {
 
     @media only screen and (max-width: $bp-big) {
       width: 40%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 75%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
     }
 
     .footer-list {
@@ -73,6 +86,15 @@ footer .container {
             font-size: 16px;
           }
         }
+
+        .link-head {
+          font-size: 20px;
+          font-weight: 700;
+
+          @media only screen and (max-width: $bp-huge) {
+            font-size: 18px;
+          }
+        }
       }
     }
   }
@@ -86,6 +108,12 @@ footer .container {
 
     @media only screen and (max-width: $bp-huge) {
       width: 48%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+      order: -1;
+      margin-bottom: 40px;
     }
 
     .sign-heading {
@@ -115,6 +143,8 @@ footer .container {
       border-radius: 10px;
       margin-bottom: 32px;
       outline: none;
+      display: flex;
+      flex-direction: column;
 
       @media only screen and (max-width: $bp-full) {
         font-size: 16px;
@@ -123,6 +153,11 @@ footer .container {
 
       @media only screen and (max-width: $bp-huge) {
         padding: 16px 0 16px 14px;
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 14px;
+        width: 70%;
       }
     }
 
@@ -162,5 +197,9 @@ footer .container {
 
   @media only screen and (max-width: $bp-full) {
     font-size: 16px;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 16px 0 19px 25px;
   }
 }

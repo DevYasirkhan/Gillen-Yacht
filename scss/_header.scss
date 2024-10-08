@@ -8,20 +8,41 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 
-  @media only screen and (max-width: $bp-full) {
+  @media only screen and (max-width: $bp-huge) {
     padding: 20px 52px 20px 18px;
+  }
+
+  @media only screen and (max-width: $bp-big) {
+    justify-content: center;
+    padding: 0;
   }
 
   .logo-box {
     display: flex;
     align-items: center;
 
+    @media only screen and (max-width: $bp-big) {
+      justify-content: space-evenly;
+      width: 100%;
+      border-bottom: 1px solid $--color-border-2;
+      padding: 30px 25px 15px 25px;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      justify-content: space-between;
+    }
+
     &__link {
       display: inline-block;
 
       &:not(:last-child) {
         margin-right: 60px;
+
+        @media only screen and (max-width: $bp-big) {
+          margin: 0;
+        }
       }
     }
 
@@ -29,16 +50,40 @@ header .container {
       height: 50px;
       width: 200px;
 
-      @media only screen and (max-width: $bp-full) {
+      @media only screen and (max-width: $bp-huge) {
         height: 40px;
         width: 180px;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        width: 130px;
+        height: 30px;
       }
     }
   }
 
   .header-right {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+
+    @media only screen and (max-width: $bp-big) {
+      width: 100%;
+      gap: 10px;
+      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__link-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @media only screen and (max-width: $bp-small) {
+        flex-direction: column;
+      }
+    }
 
     &__link {
       display: inline-block;
@@ -52,9 +97,36 @@ header .container {
       align-items: center;
       margin-right: 20px;
 
-      @media only screen and (max-width: $bp-full) {
+      @media only screen and (max-width: $bp-huge) {
         width: 40px;
         height: 40px;
+      }
+
+      @media only screen and (max-width: $bp-big) {
+        grid-column: 2 / -1;
+        grid-row: 1 / 2;
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        width: 35px;
+        height: 35px;
+      }
+
+      &-number:link,
+      &-number:visited {
+        text-decoration: none;
+        font-size: 22px;
+        font-weight: 700;
+        color: $--color-primary-4;
+        display: none;
+
+        @media only screen and (max-width: $bp-big) {
+          display: block;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+          font-size: 18px;
+        }
       }
     }
 
@@ -63,24 +135,16 @@ header .container {
       height: 25px;
       fill: #fff;
 
-      @media only screen and (max-width: $bp-full) {
+      @media only screen and (max-width: $bp-huge) {
         width: 20px;
         height: 20px;
       }
-    }
 
-    // &__menu:link,
-    // &__menu:visited {
-    //   display: inline-block;
-    //   font-size: 18px;
-    //   font-weight: 700;
-    //   text-decoration: none;
-    //   text-transform: uppercase;
-    //   background-color: $--color-primary-3;
-    //   color: #fff;
-    //   border-radius: 100px;
-    //   padding: 12px 55px;
-    // }
+      @media only screen and (max-width: $bp-medium) {
+        width: 17px;
+        height: 17px;
+      }
+    }
   }
 }
 
@@ -99,9 +163,16 @@ header .container {
   padding: 12px 55px;
   cursor: pointer;
 
-  @media only screen and (max-width: $bp-full) {
+  @media only screen and (max-width: $bp-huge) {
     font-size: 16px;
-    padding: 10px 40px;
+    padding: 10px 30px;
+  }
+
+  @media only screen and (max-width: $bp-big) {
+    padding: 22px 25px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    border-radius: 0;
   }
 }
 
@@ -127,6 +198,15 @@ header .container {
     letter-spacing: 5px;
     text-align: center;
     border-bottom: 1px solid $--color-border;
+
+    @media only screen and (max-width: $bp-huge) {
+      font-size: 12px;
+      padding: 26px 32px 26px 32px;
+    }
+
+    @media only screen and (max-width: $bp-big) {
+      padding-bottom: 17px;
+    }
   }
 
   &__list {
@@ -138,6 +218,10 @@ header .container {
     background-image: linear-gradient(to right, rgba($--color-primary-4, 0.8));
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+
+    @media only screen and (max-width: $bp-huge) {
+      background-color: $--color-primary-4;
+    }
   }
 
   &__item {
@@ -173,6 +257,10 @@ header .container {
 
     &:nth-child(7) {
       margin-bottom: 40px;
+
+      @media only screen and (max-width: $bp-huge) {
+        margin-bottom: 30px;
+      }
     }
   }
 
@@ -186,6 +274,14 @@ header .container {
     text-decoration: none;
     z-index: 10;
     position: relative;
+
+    @media only screen and (max-width: $bp-huge) {
+      font-size: 16px;
+      padding: 14px 32px 14px 60px;
+    }
+
+    @media only screen and (max-width: $bp-big) {
+    }
   }
 }
 

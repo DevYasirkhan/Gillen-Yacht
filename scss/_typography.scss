@@ -27,6 +27,11 @@
     font-size: 14px;
     padding: 10px 70px;
   }
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 12px;
+    padding: 8px 60px;
+  }
 }
 
 // UTILITIES  //
@@ -38,12 +43,12 @@
     margin-bottom: 90px;
   }
 
-  @media only screen and (max-width: 83.125em) {
+  @media only screen and (max-width: $bp-huge) {
     margin-bottom: 50px;
   }
 
-  @media only screen and (max-width: $bp-huge) {
-    margin-bottom: 40px;
+  @media only screen and (max-width: $bp-medium) {
+    margin-bottom: 30px;
   }
 }
 
@@ -60,6 +65,10 @@
 
   @media only screen and (max-width: $bp-huge) {
     margin-bottom: 50px;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-bottom: 30px;
   }
 }
 

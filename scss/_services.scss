@@ -9,11 +9,16 @@
   justify-content: center;
   align-items: center;
 
+  @media only screen and (max-width: $bp-medium) {
+    padding: 60px 25px 60px 25px;
+  }
+
   .section-heading {
     font-size: 32px;
     font-weight: 700;
     color: $--color-primary-4;
     text-transform: uppercase;
+    text-align: center;
     letter-spacing: 5px;
     margin-bottom: 40px;
 
@@ -41,6 +46,14 @@
     @media only screen and (max-width: $bp-huge) {
       width: 80%;
     }
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 90%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
+    }
   }
 
   .services-list {
@@ -57,6 +70,15 @@
     @media only screen and (max-width: $bp-huge) {
       grid-template-columns: repeat(3, 1fr);
     }
+
+    @media only screen and (max-width: $bp-big) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
   }
 
   .services-item {
@@ -64,6 +86,12 @@
     align-items: start;
     column-gap: 18px;
     row-gap: 65px;
+
+    @media only screen and (max-width: $bp-medium) {
+      &:not(:last-child) {
+        margin-bottom: 50px;
+      }
+    }
 
     &__img {
       width: 80px;
@@ -98,6 +126,10 @@
 
         @media only screen and (max-width: $bp-full) {
           font-size: 15px;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+          margin-bottom: 25px;
         }
       }
 

@@ -7,13 +7,18 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 64px 30px 76px 30px;
+  padding: 64px 25px 76px 25px;
 
   background-image: url(../img/banner-img.png);
   // background-size: 100% 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
+
+  @media only screen and (max-width: $bp-medium) {
+    background-position: left;
+    padding: 40px 25px 60px 25px;
+  }
 
   .banner-subtitle {
     font-size: 20px;
@@ -24,8 +29,8 @@
     margin-bottom: 25px;
 
     @media only screen and (max-width: $bp-full) {
-      font-size: 18px;
-      letter-spacing: 2px;
+      // font-size: 18px;
+      // letter-spacing: 2px;
     }
 
     @media only screen and (max-width: $bp-huge) {
@@ -39,25 +44,41 @@
     text-transform: uppercase;
     color: #fff;
     margin-bottom: 60px;
-    width: 80%;
+    max-width: 100%;
 
     @media only screen and (max-width: $bp-full) {
-      font-size: 50px;
-      width: 70%;
-    }
-
-    @media only screen and (max-width: 83.125em) {
-      width: 80%;
+      // max-width: 100%;
     }
 
     @media only screen and (max-width: $bp-huge) {
-      font-size: 40px;
+      font-size: 50px;
       margin-bottom: 50px;
+    }
+
+    @media only screen and (max-width: $bp-big) {
+      font-size: 40px;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 36px;
+      margin-bottom: 40px;
     }
 
     :nth-child(1) {
       display: inline-block;
-      width: 80%;
+      width: 60%;
+
+      @media only screen and (max-width: $bp-full) {
+        width: 78%;
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        width: 94%;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        width: 100%;
+      }
     }
 
     :nth-child(2) {
@@ -74,6 +95,10 @@
 
     @media only screen and (max-width: $bp-huge) {
       margin-bottom: 40px;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-bottom: 30px;
     }
 
     &__doc {
