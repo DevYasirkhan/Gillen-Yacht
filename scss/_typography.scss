@@ -60,6 +60,18 @@
   margin-bottom: 80px;
 }
 
+.mb-large2 {
+  margin-bottom: 75px;
+
+  @media only screen and (max-width: $bp-huge) {
+    margin-bottom: 60px;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-bottom: 40px;
+  }
+}
+
 .mb-big {
   margin-bottom: 65px;
 

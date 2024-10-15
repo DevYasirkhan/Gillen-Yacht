@@ -1,13 +1,8 @@
 .commitment {
-  // background-image: linear-gradient(to right, rgba($--color-primary-4, 0.6)),
-  //   url(../img/a-back-img.png);
-  // // background-size: 100% 100%;
-  // // background-size: contain;
-  // background-repeat: no-repeat;
-  // background-position: center;
 }
 
 .commitment .container {
+  min-height: 558px;
   padding: 0 25px;
   display: flex;
   align-items: center;
@@ -42,6 +37,7 @@
 
     @media only screen and (max-width: $bp-medium) {
       width: 100%;
+      padding: 100px 25px;
     }
 
     &__text {
@@ -52,7 +48,7 @@
       letter-spacing: 6px;
       text-align: center;
       width: 360px;
-      padding: 172px 0 238px 0;
+      // padding: 172px 0 238px 0;
 
       @media only screen and (max-width: $bp-full) {
         font-size: 23px;
@@ -60,12 +56,12 @@
       }
 
       @media only screen and (max-width: $bp-huge) {
-        padding: 150px 0 220px 0;
+        // padding: 150px 0 220px 0;
         font-size: 18px;
       }
 
       @media only screen and (max-width: $bp-medium) {
-        padding: 80px 25px 120px 25px;
+        // padding: 80px 25px 120px 25px;
       }
     }
   }
