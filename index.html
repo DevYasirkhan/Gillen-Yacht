@@ -52,7 +52,7 @@
             <!-- <div class="header-menu-body"> -->
             <ul class="header-menu-box__list">
               <li class="header-menu-box__item">
-                <a href="#" class="header-menu-box__link">Home</a>
+                <a href="index.html" class="header-menu-box__link">Home</a>
               </li>
               <li class="header-menu-box__item">
                 <a href="service.html" class="header-menu-box__link"
@@ -65,18 +65,22 @@
                 >
               </li>
               <li class="header-menu-box__item">
-                <a href="#" class="header-menu-box__link">Recent Projects</a>
+                <a href="Project.html" class="header-menu-box__link"
+                  >Recent Projects</a
+                >
               </li>
               <li class="header-menu-box__item">
-                <a href="#" class="header-menu-box__link"
+                <a href="carreer.html" class="header-menu-box__link"
                   >Careers & Apprenticeships</a
                 >
               </li>
               <li class="header-menu-box__item">
-                <a href="#" class="header-menu-box__link">FAQ’s</a>
+                <a href="faqs.html" class="header-menu-box__link">FAQ’s</a>
               </li>
               <li class="header-menu-box__item">
-                <a href="#" class="header-menu-box__link">Contact Us</a>
+                <a href="contact.html" class="header-menu-box__link"
+                  >Contact Us</a
+                >
               </li>
             </ul>
             <!-- </div> -->
@@ -88,6 +92,16 @@
     <main>
       <section class="banner">
         <div class="container">
+          <div class="banner-slider">
+            <img src="img/banner-img.png" alt="banner img 1" />
+
+            <img src="img/banner-img-2.png" alt="banner img 2" />
+
+            <img src="img/banner-img-3.png" alt="banner img 3" />
+
+            <img src="img/banner-img-4.png" alt="banner img 4" />
+          </div>
+
           <p class="banner-subtitle">we do more than diesel repair.</p>
 
           <h1 class="banner-heading">
@@ -391,7 +405,7 @@
 
       <section class="feature">
         <div class="container">
-          <h2 class="section-heading mb-medium">why gillen yachts</h2>
+          <h2 class="section-heading">why gillen yachts</h2>
 
           <p class="feature-subtitle">
             OUR TEAM OF HIGHLY SKILLED TECHNICIANS & CRAFTSMEN, <br />
@@ -503,11 +517,7 @@
           </div>
 
           <div class="project-img">
-            <img
-              src="img/p-back-img2.png"
-              alt="project img"
-              class="project-right__img"
-            />
+            <img src="img/p-back-img2.png" alt="project img" />
           </div>
         </div>
       </section>
@@ -1135,6 +1145,16 @@
 
     <script>
       $(document).ready(function () {
+        $(".banner-slider").slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          atoplaySpeed: 8000,
+          arrows: false,
+          fade: true,
+          Infinite: true,
+        });
+
         $(".slider").slick({
           autoplay: false,
           arrow: false,

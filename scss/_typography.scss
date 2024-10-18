@@ -84,6 +84,14 @@
   }
 }
 
+.mb-big2 {
+  margin-bottom: 62px;
+
+  @media only screen and (max-width: $bp-huge) {
+    margin-bottom: 40px;
+  }
+}
+
 .mb-medium {
   margin-bottom: 40px;
 }

@@ -1,0 +1,253 @@
+.career-top-img {
+  position: relative;
+  height: 290px;
+
+  @media only screen and (max-width: $bp-huge) {
+    height: 240px;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    height: 200px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.046);
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.career .container {
+  padding-top: 89px;
+
+  @media only screen and (max-width: $bp-full) {
+    padding-top: 80px;
+  }
+
+  @media only screen and (max-width: $bp-huge) {
+    padding-top: 70px;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    padding-top: 60px;
+  }
+
+  .section-heading {
+    font-size: 32px;
+    font-weight: 700;
+    color: $--color-primary-4;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 0 25px;
+    margin-bottom: 38px;
+    text-align: center;
+
+    @media only screen and (max-width: $bp-full) {
+      font-size: 28px;
+      letter-spacing: 3px;
+      margin-bottom: 34px;
+    }
+
+    @media only screen and (max-width: $bp-huge) {
+      font-size: 25px;
+      margin-bottom: 28px;
+    }
+  }
+
+  .career-description {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.6;
+    padding: 0 25px;
+    margin: 0 auto 130px auto;
+    width: 55%;
+
+    @media only screen and (max-width: $bp-full) {
+      width: 70%;
+    }
+
+    @media only screen and (max-width: $bp-huge) {
+      font-size: 16px;
+      width: 75%;
+      margin-bottom: 100px;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      width: 100%;
+      margin-bottom: 80px;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
+      margin-bottom: 60px;
+    }
+
+    :nth-child(1) {
+      width: 60%;
+      margin: 0 auto;
+
+      @media only screen and (max-width: $bp-medium) {
+        width: 80%;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        width: 100%;
+      }
+    }
+
+    span {
+      display: block;
+    }
+
+    &__link:link,
+    &__link:visited {
+      display: inline-block;
+      font-weight: 700;
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+
+  .career-wrapper {
+    display: flex;
+    overflow-y: hidden;
+    position: relative;
+    flex-wrap: wrap;
+
+    .career-content {
+      background-color: $--color-back;
+      padding: 94px 43px 78px 168px;
+      // padding: 0px 43px 0px 168px;
+      z-index: 1;
+      margin: 0 auto;
+      width: 50%;
+      position: relative;
+
+      @media only screen and (max-width: $bp-full) {
+        padding: 80px 35px 70px 120px;
+      }
+
+      @media only screen and (max-width: $bp-huge) {
+        padding: 60px 35px 70px 90px;
+      }
+
+      @media only screen and (max-width: $bp-big) {
+        padding: 60px 35px 70px 60px;
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        width: 100%;
+        padding: 60px 25px;
+      }
+
+      &::after {
+        content: "";
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 36%;
+        right: -10%;
+        background-color: $--color-back;
+        border: none;
+        clip-path: polygon(50% 21%, 0% 100%, 100% 100%);
+        transform: rotate(90deg);
+        z-index: 5;
+
+        @media only screen and (max-width: $bp-huge) {
+          right: -14%;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+          display: none;
+        }
+      }
+
+      &__title {
+        font-size: 52px;
+        font-weight: 700;
+        color: $--color-primary-6;
+        margin-bottom: 51px;
+
+        @media only screen and (max-width: $bp-full) {
+          font-size: 46px;
+          margin-bottom: 35px;
+        }
+
+        @media only screen and (max-width: $bp-huge) {
+          font-size: 38px;
+          margin-bottom: 28px;
+        }
+
+        @media only screen and (max-width: $bp-big) {
+          font-size: 35px;
+          margin-bottom: 28px;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+          font-size: 32px;
+          margin-bottom: 24px;
+        }
+      }
+
+      &__description {
+        font-size: 18px;
+        font-weight: 300;
+        margin-bottom: 110px;
+        width: 90%;
+        z-index: 8;
+        position: relative;
+
+        @media only screen and (max-width: $bp-huge) {
+          // width: 80%;
+          margin-bottom: 80px;
+        }
+
+        @media only screen and (max-width: $bp-big) {
+          margin-bottom: 60px;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+          width: 100%;
+          margin-bottom: 50px;
+        }
+      }
+
+      &__info {
+        font-size: 14px;
+        font-weight: 300;
+        color: $--color-red-1;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+
+        @media only screen and (max-width: $bp-full) {
+          letter-spacing: 3px;
+        }
+      }
+    }
+
+    .career-img {
+      width: 50%;
+
+      @media only screen and (max-width: $bp-medium) {
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

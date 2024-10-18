@@ -1,15 +1,15 @@
-.project {
+.s_feature {
 }
 
-.project .container {
+.s_feature .container {
   display: flex;
   overflow-y: hidden;
   position: relative;
   flex-wrap: wrap;
 
-  .project-content {
+  .s_feature-content {
     background-color: $--color-back;
-    padding: 94px 43px 128px 168px;
+    padding: 94px 43px 78px 168px;
     // padding: 0px 43px 0px 168px;
     z-index: 1;
     margin: 0 auto;
@@ -17,7 +17,7 @@
     position: relative;
 
     @media only screen and (max-width: $bp-full) {
-      padding: 80px 35px 100px 120px;
+      padding: 80px 35px 70px 120px;
     }
 
     @media only screen and (max-width: $bp-huge) {
@@ -25,7 +25,7 @@
     }
 
     @media only screen and (max-width: $bp-big) {
-      padding: 60px 35px 60px 60px;
+      padding: 60px 35px 70px 60px;
     }
 
     @media only screen and (max-width: $bp-medium) {
@@ -59,7 +59,7 @@
       font-size: 38px;
       font-weight: 700;
       color: $--color-primary-6;
-      margin-bottom: 41px;
+      margin-bottom: 51px;
 
       @media only screen and (max-width: $bp-full) {
         font-size: 34px;
@@ -106,7 +106,7 @@
     }
   }
 
-  .project-img {
+  .s_feature-img {
     width: 50%;
 
     @media only screen and (max-width: $bp-medium) {

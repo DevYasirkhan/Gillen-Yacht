@@ -1,0 +1,82 @@
+.promo .container {
+  min-height: 630px;
+  padding: 0 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url(../img/our-services-img/our-services-promo-img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+
+  @media only screen and (max-width: $bp-huge) {
+    min-height: 580px;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    min-height: 520px;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    min-height: 470px;
+  }
+
+  .promo-subtitle {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 35px;
+
+    @media only screen and (max-width: $bp-huge) {
+      font-size: 18px;
+      margin-bottom: 28px;
+    }
+
+    @media only screen and (max-width: $bp-huge) {
+      font-size: 16px;
+      margin-bottom: 28px;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-bottom: 22px;
+    }
+  }
+
+  .promo-title {
+    font-size: 68px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    // margin: 0 auto 65px auto;
+    margin-bottom: 65px;
+    max-width: 45%;
+
+    @media only screen and (max-width: $bp-full) {
+      max-width: 60%;
+    }
+
+    @media only screen and (max-width: $bp-huge) {
+      font-size: 50px;
+      margin-bottom: 50px;
+    }
+
+    @media only screen and (max-width: $bp-big) {
+      font-size: 40px;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 36px;
+      margin-bottom: 40px;
+      max-width: 70%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      max-width: 80%;
+    }
+  }
+}
