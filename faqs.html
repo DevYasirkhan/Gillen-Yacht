@@ -566,12 +566,20 @@
         $(".faqs-item__button").on("click", function () {
           $(this).parent(".faqs-item").toggleClass("active");
           $(this).siblings(".faqs-item__box").slideToggle(200);
+          $(this)
+            .children(".faqs-item__button-logo")
+            .toggleClass("rotate")
 
-          $(".faqs-item")
+            .$(".faqs-item")
             .not($(this).parent())
             .removeClass("active")
             .find(".faqs-item__box")
             .slideUp(200);
+
+          $(".faqs-item")
+            .not($(this).parent())
+            .find(".faqs-item__button-logo")
+            .removeClass("rotate");
         });
       });
     </script>

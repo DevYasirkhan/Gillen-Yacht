@@ -171,6 +171,7 @@
         height: 16px;
         fill: $--color-primary-5;
         transform: rotate(180deg);
+        transition: transform 0.3s ease;
 
         @media only screen and (max-width: $bp-huge) {
           width: 14px;
@@ -180,6 +181,10 @@
         @media only screen and (max-width: $bp-medium) {
           min-width: 12px;
           height: 12px;
+        }
+
+        &.rotate {
+          transform: rotate(0deg);
         }
       }
     }

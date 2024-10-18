@@ -4193,6 +4193,10 @@ footer .container .footer-right .sign-button {
   fill: #0053b7;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 @media only screen and (max-width: 75em) {
   .faqs .container .faqs-item__button-logo {
@@ -4205,6 +4209,10 @@ footer .container .footer-right .sign-button {
     min-width: 12px;
     height: 12px;
   }
+}
+.faqs .container .faqs-item__button-logo.rotate {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 .faqs .container .faqs-item__question {
   font-size: 52px;
