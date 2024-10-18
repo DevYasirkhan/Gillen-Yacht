@@ -581,6 +581,30 @@
             .find(".faqs-item__button-logo")
             .removeClass("rotate");
         });
+
+        // Header menu functionality
+        $(document).on("click", function (e) {
+          if (
+            !$(e.target).closest("#nav-toggle, .header-menu, .header-menu-box")
+              .length
+          ) {
+            // Uncheck the checkbox
+            $("#nav-toggle").prop("checked", false);
+            // Hide the header menu box
+            $(".header-menu-box").fadeOut(150);
+          }
+        });
+
+        // When the checkbox is checked or unchecked
+        $("#nav-toggle").on("change", function () {
+          if ($(this).is(":checked")) {
+            // Show the header menu box
+            $(".header-menu-box").fadeIn(20);
+          } else {
+            // Hide the menu box when unchecked
+            $(".header-menu-box").fadeOut(150);
+          }
+        });
       });
     </script>
   </body>
