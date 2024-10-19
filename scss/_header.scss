@@ -10,6 +10,10 @@ header .container {
   align-items: center;
   flex-wrap: wrap;
 
+  @media only screen and (max-width: $bp-full) {
+    padding: 25px 62px 25px 20px;
+  }
+
   @media only screen and (max-width: $bp-huge) {
     padding: 20px 52px 20px 18px;
   }
