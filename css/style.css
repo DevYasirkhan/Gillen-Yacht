@@ -194,7 +194,7 @@ header .container .logo-box {
             justify-content: space-evenly;
     width: 100%;
     border-bottom: 1px solid #d3d3d3;
-    padding: 30px 25px 15px 25px;
+    padding: 30px 20px 15px 20px;
   }
 }
 @media only screen and (max-width: 30em) {
@@ -202,6 +202,7 @@ header .container .logo-box {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding: 25px 20px 15px 20px;
   }
 }
 header .container .logo-box__link {
@@ -227,8 +228,8 @@ header .container .logo-box__img {
 }
 @media only screen and (max-width: 30em) {
   header .container .logo-box__img {
-    width: 130px;
-    height: 30px;
+    height: 25px;
+    width: 120px;
   }
 }
 header .container .header-right {
@@ -311,6 +312,11 @@ header .container .header-right__link {
     height: 35px;
   }
 }
+@media only screen and (max-width: 30em) {
+  header .container .header-right__link {
+    margin-right: 0;
+  }
+}
 header .container .header-right__link-number:link, header .container .header-right__link-number:visited {
   text-decoration: none;
   font-size: 22px;
@@ -326,6 +332,11 @@ header .container .header-right__link-number:link, header .container .header-rig
 @media only screen and (max-width: 48em) {
   header .container .header-right__link-number:link, header .container .header-right__link-number:visited {
     font-size: 18px;
+  }
+}
+@media only screen and (max-width: 30em) {
+  header .container .header-right__link-number:link, header .container .header-right__link-number:visited {
+    display: none;
   }
 }
 header .container .header-right__icon {
@@ -377,6 +388,12 @@ header .container .header-right__icon {
     -ms-grid-row-span: 1;
     grid-row: 1/2;
     border-radius: 0;
+  }
+}
+@media only screen and (max-width: 30em) {
+  .header-menu {
+    text-align: center;
+    padding: 18px 25px;
   }
 }
 
@@ -628,6 +645,11 @@ header .container .header-right__icon {
     margin-bottom: 30px;
   }
 }
+@media only screen and (max-width: 30em) {
+  .banner .container .banner-icon {
+    margin-bottom: 15px;
+  }
+}
 .banner .container .banner-icon__doc {
   height: 30px;
   width: 28px;
@@ -670,6 +692,11 @@ header .container .header-right__icon {
     font-size: 18px;
   }
 }
+@media only screen and (max-width: 30em) {
+  .banner .container .banner-progress__date {
+    margin-left: 30px;
+  }
+}
 .banner .container .banner-progress__line {
   width: 140px;
   height: 6px;
@@ -680,6 +707,11 @@ header .container .header-right__icon {
 @media only screen and (max-width: 105em) {
   .banner .container .banner-progress__line {
     width: 110px;
+  }
+}
+@media only screen and (max-width: 30em) {
+  .banner .container .banner-progress__line {
+    width: 90px;
   }
 }
 .banner .container .banner-progress__line::before {

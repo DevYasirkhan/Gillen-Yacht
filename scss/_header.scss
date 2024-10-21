@@ -31,11 +31,12 @@ header .container {
       justify-content: space-evenly;
       width: 100%;
       border-bottom: 1px solid $--color-border-2;
-      padding: 30px 25px 15px 25px;
+      padding: 30px 20px 15px 20px;
     }
 
     @media only screen and (max-width: $bp-small) {
       justify-content: space-between;
+      padding: 25px 20px 15px 20px;
     }
 
     &__link {
@@ -60,8 +61,8 @@ header .container {
       }
 
       @media only screen and (max-width: $bp-small) {
-        width: 130px;
-        height: 30px;
+        height: 25px;
+        width: 120px;
       }
     }
   }
@@ -116,6 +117,10 @@ header .container {
         height: 35px;
       }
 
+      @media only screen and (max-width: $bp-small) {
+        margin-right: 0;
+      }
+
       &-number:link,
       &-number:visited {
         text-decoration: none;
@@ -130,6 +135,10 @@ header .container {
 
         @media only screen and (max-width: $bp-medium) {
           font-size: 18px;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+          display: none;
         }
       }
     }
@@ -177,6 +186,11 @@ header .container {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     border-radius: 0;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    text-align: center;
+    padding: 18px 25px;
   }
 }
 
